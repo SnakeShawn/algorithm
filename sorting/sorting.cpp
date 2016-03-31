@@ -64,6 +64,31 @@ void InsertSort(int array[], const int size)
 
 void QuickSort(int array[], const int size)
 {	
-
+	if (size <= 1)
+		return;
+	int key = array[0];
+	int i = 0;
+	int j = size -1;
+	int index = 0;
+	while (i < j){
+		while (j>i && array[j]>=key)
+			j--;
+		if (i == j)
+			break;
+		else{
+			swap(array[i], array[j]);
+			index = j;
+		}
+		while (i<j && array[i]<=key)
+			i++;
+		if (i == j)
+			break;
+		else{
+			swap(array[i], array[j]);
+			index = i;
+		}
+	}
+	QuickSort(array, index);
+	QuickSort(array + index + 1, size - 1 - index);
 }
 

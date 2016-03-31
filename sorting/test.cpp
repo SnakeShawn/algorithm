@@ -8,7 +8,8 @@ int main(){
 	//BubbleSort(array, size);
 	//ExchangeSort(array, size);
 	//SelectSort(array, size);
-	InsertSort(array, size);
+	//InsertSort(array, size);
+	QuickSort(array, size);
 	for (int i=0; i<size; i++){
 		printf("%d\n", array[i]);
 	}
