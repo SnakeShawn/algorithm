@@ -61,6 +61,8 @@ void InsertSort(int array[], const int size)
 	}
 }
 
+void ShellSort(int array[], const int size)
+{}
 
 void QuickSort(int array[], const int size)
 {	
