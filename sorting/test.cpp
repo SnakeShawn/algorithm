@@ -71,12 +71,20 @@ int main()
 	printf("---------------------------------------------------------\n");
 	sleep(1);
 	GenerateArray(array, size);
+	clock_t start_shell = clock();
+	ShellSort(array, size);
+	clock_t end_shell = clock();
+	printf("Shell:Running time is %lf ms\n", (double)(end_shell-start_shell)/CLOCKS_PER_SEC*1000);
+
+	printf("---------------------------------------------------------\n");
+	sleep(1);
+	GenerateArray(array, size);
 	clock_t start_quick = clock();
 	QuickSort(array, size);
 	clock_t end_quick = clock();
 	printf("Quick:Running time is %lf ms\n", (double)(end_quick-start_quick)/CLOCKS_PER_SEC*1000);
 #endif
-	//ShellSort(array, size);
+
 	//PrintArray(array, size);
 
 	return 0;

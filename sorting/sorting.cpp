@@ -62,7 +62,23 @@ void InsertSort(int array[], const int size)
 }
 
 void ShellSort(int array[], const int size)
-{}
+{
+	int increment = size/2;
+	while (increment>=1){
+
+		for (int i=increment; i<size; i++){
+			if (array[i] < array[i-increment]){
+				int guard = array[i];
+				int j;
+				for (j=i-increment;(j>=0)&&(guard<array[j]);j-=increment){
+					array[j+increment] = array[j];
+				}
+				array[j+increment] = guard;
+			}
+		}
+		increment = increment/2;
+	}
+}
 
 void QuickSort(int array[], const int size)
 {	
