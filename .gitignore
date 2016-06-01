@@ -1,5 +1,9 @@
+# macOS:
 .DS_Store
 
+# C++:
 *.o
 
 test
+
+# My config:
