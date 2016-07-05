@@ -40,7 +40,7 @@ class Solution{
 };
 
 int main(){
-	string str ="";
+	string str ="23";
 	Solution s;
 	vector<string> res = s.letterCombinations(str);
 	for (auto r : res){
