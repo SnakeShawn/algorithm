@@ -9,6 +9,7 @@ void swap(int & a, int & b)
 	b = temp;
 }
 
+//冒泡排序
 void BubbleSort(int array[], const int size)
 {
 	for (int i=0; i<size; i++){
@@ -19,7 +20,7 @@ void BubbleSort(int array[], const int size)
 	}
 }
 
-
+//选择排序
 void ExchangeSort(int array[], const int size)
 {
 	for (int i=0; i<size; i++){
@@ -30,6 +31,7 @@ void ExchangeSort(int array[], const int size)
 	}
 }
 
+//选择排序
 void SelectSort(int array[], const int size)
 {
 	for (int i=0; i<size; i++){
@@ -46,6 +48,7 @@ void SelectSort(int array[], const int size)
 	}
 }
 
+//插入排序
 void InsertSort(int array[], const int size)
 {
 	int temp;
@@ -61,6 +64,7 @@ void InsertSort(int array[], const int size)
 	}
 }
 
+//希尔排序
 void ShellSort(int array[], const int size)
 {
 	int increment = size/2;
@@ -80,6 +84,7 @@ void ShellSort(int array[], const int size)
 	}
 }
 
+//快速排序
 void QuickSort(int array[], const int size)
 {	
 	if (size <= 1)
